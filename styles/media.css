@@ -1,0 +1,13 @@
+@media screen and (max-width: 1370px){   
+    ul{
+        position: relative;  
+        margin-right: 50px;
+        margin-top: 0px;
+        right: 110px;
+    }
+}
+@media screen and (max-width: 1110px){
+    title_mid h1{
+        font-size: 20px;
+    }
+}

@@ -69,7 +69,7 @@
 
 @media screen and (max-width: 445px){
     main .box .title_mid{
-        margin-left: 10px;
+        margin-left: -10px;
     }
 }
 

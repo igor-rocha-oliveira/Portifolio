@@ -1,13 +1,116 @@
-@media screen and (max-width: 1370px){   
-    ul{
-        position: relative;  
-        margin-right: 50px;
-        margin-top: 0px;
-        right: 110px;
+@media screen and (max-width: 1025px){
+    main .box .title_mid{
+        font-size: 100px;
     }
 }
-@media screen and (max-width: 1110px){
-    title_mid h1{
-        font-size: 20px;
+
+@media screen and (max-width: 790px){
+    main .box .title_mid{
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 740px){
+    header .title_top{
+        font-size: 40px;
+    }
+    header .icones ul{
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    main .box .title_mid{
+        font-size: 60px;
+    }
+
+    header .title_top{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 585px){
+    header .icones ul li a img{
+        width: 30px;
+    }
+    header .icones ul{
+        padding-top: 30px;
+    }
+    main .box .title_mid{
+        float: left;
+    }
+}
+
+@media screen and (max-width: 520px){
+    
+    header .icones ul{
+        position: relative;
+        padding-left: 43%;
+        padding-top: 100px;
+    }
+    
+    header .title_top{
+        text-align: center;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    main .box .title_mid{
+        margin-left: 45px;
+    }
+
+    main .box {
+        align-self: center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 445px){
+    main .box .title_mid{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 410px){
+    main .box .title_mid{
+        margin-left: 15px;
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    main .box{
+        margin: 50px;
+        padding: 30px;
+    }
+    
+    main .box .title_mid{
+        margin-left: 0;
+        padding: 0;
+        font-size: 40px;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 280px){
+    header .icones ul{
+        margin: 0;
+        padding: 15px;
+        float: right;
+    }
+    main .box .title_mid{
+        font-size: 30px;
+        margin-left: 45px;
+    }
+    main .box {
+        margin: 10px;
+        padding: 5px;
+        
+    }
+    footer p{
+        margin: 10px;
+        margin-top: 50px;
     }
 }

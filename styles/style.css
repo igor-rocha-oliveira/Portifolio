@@ -33,6 +33,7 @@ li {
     text-decoration: none;
     display: inline-block;
 }
+
 .icones ul li a img:hover{
     cursor: pointer;
     top: -20px;
@@ -48,11 +49,18 @@ li {
 
 /*Main*/
 
+/*Primeira parte do site - inicio*/
+
+#tela-inicial{
+    height: 100vh;
+}
+
 .box{
     margin:60px;
     padding: 60px;
     text-align: center;
 }
+
 .title_mid{
     font-size: 145px;
 }
@@ -68,11 +76,147 @@ main .box p{
     text-indent: 2.6em;
 }
 
+#btn{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#btn #btn-sobre, #btn-projetos{
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    border-radius: 25px;
+    padding: 15px;
+    background: rgb(70, 21, 204);
+    width: 120px;
+}
+
+/*Segunda parte do site - sobre*/
+
+#tela-sobre{
+    height: 100vh;
+    
+}
+
+#tela-sobre #tela-sobre-cima #imagem{
+       margin-top: 220px;
+       margin-bottom: 50px;
+       margin-left: 80px;
+}
+
+#tela-sobre #tela-sobre-cima #imagem img{
+    width: 250px;
+    border-radius: 200px;
+}
+
+#tela-sobre-cima{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+#tela-sobre #sobre, #imagem{
+    margin-top: 300px;
+}
+
+/*terceira parte do site - projetos*/
+
+#tela-projetos{
+    height: 85vh;
+}
+
+#tela-projetos #tela-projetos-all{
+    display: grid;
+    margin: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    
+}
+
+#tela-projetos #projetos{
+    border: 5px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#tela-projetos #projetos #projetos-mundo{
+    display: flex;
+    height: 250px;
+    width: 400px;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+#tela-projetos #projetos #projetos-anime img{
+    object-fit: cover;
+    height: 280px;
+    width: 402px;
+}
+
+#tela-projetos #projetos #projetos-anime{
+    display: flex;
+    height: 250px;
+    width: 400px;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+#tela-projetos #projetos #projetos-covid img{
+    object-fit: cover;
+    height: 250px;
+    width: 400px;
+}
+
+#tela-projetos #projetos #projetos-covid{
+    display: flex;
+    height: 250px;
+    width: 400px;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+#tela-projetos #tela-projetos-out{
+    text-align: center;
+}
+
+#tela-projetos #projetos #projetos-mundo img{
+    object-fit: cover;
+    height: 250px;
+    width: 400px;
+}
+
+#tela-projetos #tela-projetos-out p{
+    margin-bottom: 20px;
+}
+
+#btn-repositorio{
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(70, 21, 204);
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgb(70, 21, 204);
+}
+
+#btn-repositorio-projeto{
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(70, 21, 204);
+    border-radius: 15px;
+    border-width: 0 15px;
+    padding: 5px;
+    background-color: rgb(70, 21, 204);
+}
+
 /*footer*/
 
 footer p{
-    margin: 80px 50px 15px 50px;
+    margin: 60px 50px 25px 50px;
     text-align: justify;
-    margin-bottom: 0;
     text-indent: 2.6em;
 }

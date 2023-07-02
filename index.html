@@ -8,7 +8,7 @@
     <title>Portifolio</title>
 </head>
 <body>
-    <header>
+    <header id="Inicio">
         <h5 class="title_top">Igor da Rocha Oliveira</h5>
         <div class="icones">
             <ul>
@@ -19,15 +19,138 @@
         </div>
     </header>
     <main>
-        <div class="box">
-            <h1 class="title_mid">FRONTEND </br>DEVELOPER</h1>
-            
-            <p class="resumo">Trabalhando de freelance à 5 anos formado em Analise e Desenvolvimento de Sistemas</p>
-        </div>
+        <section id="tela-inicial">
+            <div class="box">
+                <h1 class="title_mid">FRONTEND </br>DEVELOPER</h1>
+                <div id="btn">
+                    <a id="btn-sobre" href="#tela-sobre">Sobre mim</a>
+                    <a id="btn-projetos" href="#tela-projetos">Projetos</a>
+                </div>
+            </div>
+        </section>
+        <section id="tela-sobre">
+            <div id="tela-sobre-cima">
+                <div id="imagem">
+                    <img src="/images/igor menor.jpg" alt="imagen-perfil">
+                </div>
+                <div id="sobre">
+                    <h3>Igor da Rocha Oliveira</h3>
+                    <p>Desenvolvendo interfaces e APIs com Java, Javascript desde 2022</p>
+                    <p>Formado em analise e desenvolvimento de sistemas em 2022</p>
+                    <p>Interesse em desenvolvimento Front End e Back End</p>
+                    <p>Buscando uma oportunidade para atuar como desenvolvedor</p>
+                    <p>Trabalhando de freelance à 1 ano</p>
+                </div>
+            </div>
+            <div>
+                <div id="btn">
+                    <a id="btn-sobre" href="#Inicio">Inicio</a>
+                    <a id="btn-projetos" href="#tela-projetos">Projetos</a>
+                </div>
+            </div>
+        </section>
+        <section id="tela-projetos">
+                <div id="tela-projetos-all">
+                    <div id="tela-projetos-out">
+                        <h4>Site Mundo Invertido</h4>
+                        <div id="projetos">
+                            <div id="projetos-mundo">
+                                <img src="images/mundo-invertido/mundo invertido claro.png" id="projetos-item-mundo" alt="Mundo invertido" srcset="">
+                                <img src="images/mundo-invertido/mundo invertido claro 2.png" id="projetos-item-mundo" alt="Mundo invertido" srcset="">
+                                <img src="images/mundo-invertido/mundo invertido claro 3.png" id="projetos-item-mundo" alt="Mundo invertido" srcset="">
+                                <img src="images/mundo-invertido/mundo invertido claro 4.png" id="projetos-item-mundo" alt="Mundo invertido" srcset="">
+                                <img src="images/mundo-invertido/mundo invertido dark.png" id="projetos-item-mundo" alt="Mundo invertido" srcset="">
+                                <img src="images/mundo-invertido/mundo invertido dark 1.png" id="projetos-item-mundo" alt="Mundo invertido" srcset="">
+                                <img src="images/mundo-invertido/mundo invertido dark 2.png" id="projetos-item-mundo" alt="Mundo invertido" srcset="">
+                                <img src="images/mundo-invertido/mundo invertido dark 3.png" id="projetos-item-mundo" alt="Mundo invertido" srcset="">
+                            </div>
+                        </div>
+                        <p>Projeto de um site baseado na serie strange things realizado no bootcamp da dio </p>
+                        <a href="https://github.com/igor-rocha-oliveira/Mundo-Invertido-DIO" id="btn-repositorio" target="_blank">Repositório</a>
+                    </div>
+                    <div id="tela-projetos-out">
+                        <h4>Site Anime.net</h4>
+                        <div id="projetos">
+                            <div id="projetos-anime">
+                                <img src="images/anime-net/anime-net1.png" id="projetos-item-anime" alt="Anime.net" srcset="">
+                                <img src="images/anime-net/anime-net2.png" id="projetos-item-anime" alt="Anime.net" srcset="">
+                                <img src="images/anime-net/anime-net3.png" id="projetos-item-anime" alt="Anime.net" srcset="">
+                            </div>
+                        </div>
+                        <p>Projeto realizado imitando a interface da netflix com proposta para animes</p>
+                        <a href="https://github.com/igor-rocha-oliveira/Anime.Net" id="btn-repositorio" target="_blank">Repositório</a>
+                        <a href="https://anime-net.vercel.app" id="btn-repositorio-projeto" target="_blank">Projeto</a>
+                    </div>
+                    <div id="tela-projetos-out">
+                        <h4>Site Covid19-Mundo</h4>
+                        <div id="projetos">
+                            <div id="projetos-covid">
+                                <img src="images/covid19-mundo/covid.png" id="projetos-item-covid" alt="Covid19-mundo" srcset="">    
+                            </div>
+                            
+                        </div>
+                        <p>Projeto utilizando API para mostrar informações selecionadas sobre covid em um site simples</p>
+                        <a href="https://github.com/igor-rocha-oliveira/Covid19-Mundo/tree/main/covid19" id="btn-repositorio" target="_blank">Repositório</a>
+                    </div>
+                </div>
+            </div>
+            <div id="btn">
+                <a id="btn-projetos" href="#Inicio">Inicio</a>
+                <a id="btn-sobre" href="#tela-sobre">Sobre mim</a>
+            </div>
+
+        </section>
     </main>
     <footer>
         <p>Projeto construído com o objetivo de mostrar de forma rápida e clara minhas competências em prática, e os conhecimentos das varias linguagens de programação existentes. </p>
     </footer>
-    
+    <script>
+        const imgs = document.getElementById("projetos-mundo");
+        const img = document.querySelectorAll("#projetos-mundo img");
+
+        const imgsA = document.getElementById("projetos-anime");
+        const imgA = document.querySelectorAll("#projetos-anime img");
+
+        const imgsC = document.getElementById("projetos-covid");
+        const imgC = document.querySelectorAll("#projetos-covid img");
+
+        let idx = 0;
+        let idxA = 0;
+        let idxC = 0;
+
+        function carrossel(){
+            idx++;
+
+            if(idx > img.length - 1){
+                idx = 0;
+            }
+            imgs.style.transform = `translateX(${-idx * 400}px)`;
+        }
+
+        setInterval(carrossel, 1800);
+
+        function carrossel2(){
+            idxA++;
+
+            if(idxA > imgA.length - 1){
+                idxA = 0;
+            }
+            imgsA.style.transform = `translateX(${-idxA * 400}px)`;
+        }
+
+        setInterval(carrossel2, 1800);
+
+        function carrossel3(){
+            idxC++;
+
+            if(idxC > imgC.length - 1){
+                idxC = 0;
+            }
+            imgsC.style.transform = `translateX(${-idxC * 400}px)`;
+        }
+
+        setInterval(carrossel3, 1800);
+
+    </script>
 </body>
 </html>
